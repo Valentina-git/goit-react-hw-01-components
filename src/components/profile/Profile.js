@@ -1,35 +1,35 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Wrapper from './styledProfile';
+import WrapperProfile from './styledProfile';
 
 const Profile = ({ name, tag, location, avatar, stats }) => {
   const { followers, views, likes } = stats;
   return (
-    // <Wrapper>
-    <div className="profile">
-      <div className="description">
-        <img src={avatar} alt={name} className="avatar" width="250" />
-        <p className="name">{name}</p>
-        <p className="tag">&#64;{tag}</p>
-        <p className="location">{location}</p>
-      </div>
+    <WrapperProfile>
+      <div className="profile">
+        <div className="description">
+          <img src={avatar} alt={name} className="avatar" width="250" />
+          <p className="name">{name}</p>
+          <p className="tag">&#64;{tag}</p>
+          <p className="location">{location}</p>
+        </div>
 
-      <ul className="stats">
-        <li>
-          <span className="label">Followers</span>
-          <span className="quantity">{followers}</span>
-        </li>
-        <li>
-          <span className="label">Views</span>
-          <span className="quantity">{views}</span>
-        </li>
-        <li>
-          <span className="label">Likes</span>
-          <span className="quantity">{likes}</span>
-        </li>
-      </ul>
-    </div>
-    // </Wrapper>
+        <ul className="stats list">
+          <li>
+            <span className="label">Followers</span>
+            <span className="quantity">{followers}</span>
+          </li>
+          <li>
+            <span className="label">Views</span>
+            <span className="quantity">{views}</span>
+          </li>
+          <li>
+            <span className="label">Likes</span>
+            <span className="quantity">{likes}</span>
+          </li>
+        </ul>
+      </div>
+    </WrapperProfile>
   );
 };
 

@@ -1,11 +1,12 @@
 import styled from 'styled-components';
 
-const Wrapper = styled.div`
+const WrapperStatic = styled.div`
   .statistics {
     max-width: max-content;
     display: block;
     margin: 0 auto;
     background-color: #ffffff;
+    box-shadow: 3px 3px 5px 4px #777777;
   }
   .title {
     padding: 25px;
@@ -28,4 +29,4 @@ const Wrapper = styled.div`
     font-size: 12px;
   }
 `;
-export default Wrapper;
+export default WrapperStatic;

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const Wrapper = styled.div`
+const WrapperProfile = styled.div`
   padding: 30px 0;
   .profile {
     overflow: hidden;
@@ -14,5 +14,38 @@ const Wrapper = styled.div`
   .description {
     padding: 10px;
   }
+  .avatar {
+    margin-bottom: 15px;
+  }
+  .name,
+  .tag,
+  .location {
+    padding: 10px;
+    color: #888888;
+    text-align: center;
+  }
+  .name {
+    color: #444444;
+    font-weight: 700;
+    font-size: 20px;
+  }
+  .stats {
+    display: flex;
+    justify-content: space-between;
+  }
+  .stats li {
+    padding: 10px;
+    border-top: 1px solid grey;
+    width: calc(100% / 3);
+    background-color: #dddddd;
+  }
+  .stats li:not(:last-child) {
+    border-right: 1px solid grey;
+  }
+  .label,
+  .quantity {
+    display: block;
+    text-align: center;
+  }
 `;
-export default Wrapper;
+export default WrapperProfile;
